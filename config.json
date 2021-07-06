@@ -1,14 +1,14 @@
 {
 	"poolHost": "your.pool.host",
 
-	"coin": "deafult",
-	"symbol": "AMX",
+	"coin": "gota",
+	"symbol": "GOT",
 	"coinUnits": 100000000,
 	"coinDecimalPlaces": 8,
 	"coinDifficultyTarget": 120,
-	"blockchainExplorer": "http://explorer.armornetwork.org/block/{id}",
-	"transactionExplorer": "http://explorer.armornetwork.org/tx/{id}",
-	"daemonType": "default",
+	"blockchainExplorer": "http://explorer.gotanetwork.org/block/{id}",
+	"transactionExplorer": "http://explorer.gotanetwork.org/tx/{id}",
+	"daemonType": "bytecoin",
 	"cnAlgorithm": "cryptonight",
 	"cnVariant": 15,
 	"cnBlobType": 2,
@@ -30,7 +30,7 @@
 		"mergedMining": false,
 		"clusterForks": "auto",
 		"poolAddress": "** Your pool wallet address **",
-		"intAddressPrefix": 1717961,
+		"intAddressPrefix": 3244013,
 		"blockRefreshInterval": 1000,
 		"minerTimeout": 900,
 		"sslCert": "./cert.pem",
@@ -102,12 +102,12 @@
 		"enabled": true,
 		"interval": 300,
 		"maxAddresses": 50,
-		"mixin": 6,
+		"mixin": 0,
 		"priority": 0,
 		"dynamicTransferFee": true,
 		"minerPayFee": true,
 		"minPayment": 100000000,
-		"maxTransactionAmount": 500000000000,
+		"maxTransactionAmount": 200000000000,
 		"denomination": 10000000
 	},
 
@@ -140,12 +140,12 @@
 
 	"daemon": {
 		"host": "127.0.0.1",
-		"port": 58081
+		"port": 38081
 	},
 
 	"wallet": {
 		"host": "127.0.0.1",
-		"port": 58082,
+		"port": 38082,
 		"password": "user:pass"
 	},
 

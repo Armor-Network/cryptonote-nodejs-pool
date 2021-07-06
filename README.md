@@ -1,26 +1,41 @@
-armor-nodejs-pool
+gota-nodejs-pool
 ======================
 
-High performance Node.js (with native C addons) mining pool for **Armor Network**.
+High performance Node.js (with native C addons) mining pool for **Gota Network**.
+
+### **Attention! This pool only works with LEGACY ADDRESSES**
+A legacy address is created as follows:
+```
+./walletd --create-wallet --wallet-type=legacy --wallet-file=/PATH/TO/mygota.wallet
+```
 
 #### Table of Contents
-* [Features](#features)
-* [Community Support](#community--support)
-* [Pools Using This Software](#pools-using-this-software)
-* [Usage](#usage)
-  * [Requirements](#requirements)
-  * [Downloading & Installing](#1-downloading--installing)
-  * [Configuration](#2-configuration)
-  * [Starting the Pool](#3-start-the-pool)
-  * [Host the front-end](#4-host-the-front-end)
-  * [Customizing your website](#5-customize-your-website)
-  * [SSL](#ssl)
-  * [Upgrading](#upgrading)
-* [JSON-RPC Commands from CLI](#json-rpc-commands-from-cli)
-* [Monitoring Your Pool](#monitoring-your-pool)
-* [Donations](#donations)
-* [Credits](#credits)
-* [License](#license)
+- [gota-nodejs-pool](#gota-nodejs-pool)
+    - [**Attention! This pool only works with LEGACY ADDRESSES**](#attention-this-pool-only-works-with-legacy-addresses)
+      - [Table of Contents](#table-of-contents)
+- [Features](#features)
+      - [Optimized pool server](#optimized-pool-server)
+      - [Live statistics API](#live-statistics-api)
+      - [Mined blocks explorer](#mined-blocks-explorer)
+      - [Smart payment processing](#smart-payment-processing)
+      - [Admin panel](#admin-panel)
+      - [Pool stability monitoring](#pool-stability-monitoring)
+      - [Extra features](#extra-features)
+- [Community / Support](#community--support)
+- [Usage](#usage)
+      - [Requirements](#requirements)
+        - [Seriously](#seriously)
+      - [1) Downloading & Installing](#1-downloading--installing)
+      - [2) Configuration](#2-configuration)
+      - [3) Start the pool](#3-start-the-pool)
+      - [4) Host the front-end](#4-host-the-front-end)
+      - [5) Customize your website](#5-customize-your-website)
+      - [SSL](#ssl)
+      - [Upgrading](#upgrading)
+    - [JSON-RPC Commands from Gota daemon](#json-rpc-commands-from-gota-daemon)
+    - [Monitoring Your Pool](#monitoring-your-pool)
+  - [Credits](#credits)
+  - [License](#license)
 
 
 Features
@@ -91,9 +106,9 @@ Features
 Community / Support
 ===
 
-* [GitHub Wiki](https://github.com/armornetworkdev/armor-nodejs-pool/wiki)
-* [GitHub Issues](https://github.com/armornetworkdev/armor-nodejs-pool/issues)
-* [Telegram Group](https://t.me/ARMORCURRENCY)
+* [GitHub Wiki](https://github.com/gotanetwork/gota-nodejs-pool/wiki)
+* [GitHub Issues](https://github.com/gotanetwork/gota-nodejs-pool/issues)
+* [Telegram Group]([https://[t.me/ARMORCURRENCY](https://t.me/gotanetwork)](https://t.me/gotanetwork))
 
 Usage
 ===
@@ -153,7 +168,7 @@ sudo su - your-user
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/armornetworkdev/armor-nodejs-pool.git pool
+git clone https://github.com/gotanetwork/gota-nodejs-pool.git pool
 cd pool
 
 npm update
@@ -632,7 +647,7 @@ node init.js -module=api
 [Example screenshot](http://i.imgur.com/SEgrI3b.png) of running the pool in single module mode with tmux.
 
 To keep your pool up, on operating system with systemd, you can create add your pool software as a service.  
-Use this [example](https://github.com/armornetworkdev/armor-nodejs-pool.git/blob/master/deployment/cryptonote-nodejs-pool.service) to create the systemd service `/lib/systemd/system/cryptonote-nodejs-pool.service`
+Use this [example](https://github.com/gotanetwork/gota-nodejs-pool.git/blob/master/deployment/cryptonote-nodejs-pool.service) to create the systemd service `/lib/systemd/system/cryptonote-nodejs-pool.service`
 Then enable and start the service with the following commands :
 
 ```
@@ -759,10 +774,10 @@ the Node.js modules, and any config files that may have been changed.
 * Run `npm update` to force updating/reinstalling of the dependencies.
 * Compare your `config.json` to the latest example ones in this repo or the ones in the setup instructions where each config field is explained. You may need to modify or add any new changes.
 
-### JSON-RPC Commands from Armor daemon
+### JSON-RPC Commands from Gota daemon
 
 Documentation for JSON-RPC commands can be found here:
-* Armor RPC https://github.com/armornetworkdev/armor/wiki
+* Gota RPC https://github.com/gotanetwork/gota/wiki
 
 Curl can be used to use the JSON-RPC commands from command-line. Here is an example of calling `getblockheaderbyheight` for block 100:
 
@@ -783,7 +798,7 @@ Credits
 
 * [fancoder](//github.com/fancoder) - Developper on cryptonote-universal-pool project from which current project is forked.
 * [dvandal](//github.com/dvandal) - Developer of cryptonote-nodejs-pool software
-* [armornetworkde](//github.com/armornetworkdev) - Armor Network Developers Team.
+* [gotanetworkde](//github.com/gotanetwork) - Gota Network Developers Team.
 
 License
 -------
