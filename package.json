@@ -6,7 +6,7 @@
 	"Maintained by": "Musclesonvacation",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/noritte/gota-nodejs-pool.git"
+		"url": "https://github.com/Gotanetwork/gota-nodejs-pool.git"
 	},
 	"dependencies": {
 		"async": "1",
