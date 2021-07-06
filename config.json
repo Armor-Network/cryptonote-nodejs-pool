@@ -8,10 +8,12 @@
 	"coinDifficultyTarget": 120,
 	"blockchainExplorer": "http://explorer.gotanetwork.org/block/{id}",
 	"transactionExplorer": "http://explorer.gotanetwork.org/tx/{id}",
-	"daemonType": "bytecoin",
+	"daemonType": "default",
 	"cnAlgorithm": "cryptonight",
 	"cnVariant": 15,
 	"cnBlobType": 2,
+	"includeHeight": true,
+	"includeAlgo": "cn/zls",
 
 	"logging": {
 		"files": {
