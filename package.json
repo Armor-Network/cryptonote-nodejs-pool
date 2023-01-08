@@ -11,20 +11,20 @@
 	"dependencies": {
 		"async": "1",
 		"base58-native": "*",
-		"bignum": "*",
+		"bignum": "git+https://github.com/justmoon/node-bignum.git",
 		"cli-color": "*",
-		"cryptoforknote-util": "git://github.com/MoneroOcean/node-cryptoforknote-util.git",
-		"cryptonight-hashing": "git://github.com/MoneroOcean/node-cryptonight-hashing.git",
+		"cryptoforknote-util": "git+https://github.com/MoneroOcean/node-cryptoforknote-util.git",
+		"cryptonight-hashing": "git+https://github.com/MoneroOcean/node-cryptonight-hashing.git",
 		"dateformat": "4.0.0",
-		"mailgun.js": "*",
+		"mailgun.js": "git+https://github.com/LOUD-Mining/mailgun-js.git",
 		"node-telegram-bot-api": "*",
-		"nodemailer": "2.7.2",
+		"nodemailer": "6.8.0",
 		"nodemailer-sendmail-transport": "*",
-		"redis": "3.1.2",
-		"socket.io": "^2.1.1",
+		"redis": "^3.1.2",
+		"socket.io": "4.5.4",
 		"time-ago": "*"
 	},
 	"engines": {
-		"node": ">=8.11.3"
+		"node": ">=12.22.12"
 	}
 }
